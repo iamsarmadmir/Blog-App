@@ -1,0 +1,179 @@
+/* General styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eef2f3;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar */
+header {
+  background: linear-gradient(90deg, #00bcd4, #00796b);
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: white;
+  margin-right: 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc80;
+}
+
+/* Home Page */
+.home {
+  padding: 20px;
+}
+
+.home h1 {
+  font-size: 2.5rem;
+  color: #004d40;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-item {
+  background-color: #ffffff;
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.post-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.read-more {
+  color: #00796b;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.read-more:hover {
+  color: #004d40;
+}
+
+/* About Page */
+.about {
+  padding: 20px;
+  background-color: #ffffff;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about h1 {
+  font-size: 2.5rem;
+  color: #00796b;
+}
+
+.about p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Contact Page */
+.contact {
+  padding: 20px;
+  background-color: #ffffff;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact h1 {
+  font-size: 2.5rem;
+  color: #00796b;
+}
+
+.contact p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Post Details Page */
+.post-details {
+  padding: 20px;
+  background-color: #ffffff;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post-details h1 {
+  font-size: 2.5rem;
+  color: #004d40;
+}
+
+.post-details p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.back-to-home {
+  display: inline-block;
+  margin-top: 20px;
+  color: #00796b;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.back-to-home:hover {
+  color: #004d40;
+}
+
+/* Loading and Error */
+.loading,
+.error {
+  font-size: 1.5rem;
+  color: #ff5722;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    font-size: 90%;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .post-item {
+    padding: 15px;
+  }
+
+  .about, .contact, .post-details {
+    margin: 10px;
+    padding: 15px;
+  }
+}
