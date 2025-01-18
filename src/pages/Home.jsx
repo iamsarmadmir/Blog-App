@@ -11,7 +11,7 @@ function Home() {
     fetch("https://jsonplaceholder.typicode.com/posts")
       .then((response) => response.json())
       .then((data) => {
-        setPosts(data.slice(0, 5)); // Display first 5 posts for example
+        setPosts(data.slice(0, 5)); 
         setLoading(false);
       })
       .catch((err) => {
